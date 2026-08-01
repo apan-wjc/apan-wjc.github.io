@@ -26,6 +26,21 @@ mkdocs serve -a 0.0.0.0:8000   # bring up a live site, any change shows lively.
 
 deactivate
 ```
+### Set up
+```bash
+cd /opt/apan-wjc.github.io
+\rm -rf venv   # if venv already exists and need to redo
+
+source venv/bin/activate
+pip --version
+pip install --upgrade pip
+pip install mkdocs
+pip install mkdocs-material
+mkdocs --version
+mkdocs new .   # ONLY for the first time
+mkdocs serve -a 0.0.0.0:8000
+```
+
 ### Publish
 After all change looks good, the following command will launch a deployment and update the site
 ```bash
@@ -34,9 +49,12 @@ cd /opt/apan-wjc.github.io
 git status
 git diff
 
+mkdocs build
+
 git add -A && git commit -a -m "XXXXXXXXX"
 git push
-mkdocs gh-deploy
+
+mkdocs gh-deploy --force
 ```
 
 ### Source
