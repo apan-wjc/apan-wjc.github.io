@@ -357,6 +357,17 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#set-up" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Set up
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#publish" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -455,6 +466,17 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#set-up" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Set up
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#publish" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -519,6 +541,19 @@ mkdocs serve -a 0.0.0.0:8000   # bring up a live site, any change shows lively.
 
 deactivate
 </code></pre>
+<h3 id="set-up">Set up</h3>
+<pre><code class="language-bash">cd /opt/apan-wjc.github.io
+\rm -rf venv   # if venv already exists and need to redo
+
+source venv/bin/activate
+pip --version
+pip install --upgrade pip
+pip install mkdocs
+pip install mkdocs-material
+mkdocs --version
+mkdocs new .   # ONLY for the first time
+mkdocs serve -a 0.0.0.0:8000
+</code></pre>
 <h3 id="publish">Publish</h3>
 <p>After all change looks good, the following command will launch a deployment and update the site</p>
 <pre><code class="language-bash">cd /opt/apan-wjc.github.io
@@ -526,9 +561,12 @@ deactivate
 git status
 git diff
 
+mkdocs build
+
 git add -A &amp;&amp; git commit -a -m &quot;XXXXXXXXX&quot;
 git push
-mkdocs gh-deploy
+
+mkdocs gh-deploy --force
 </code></pre>
 <h3 id="source">Source</h3>
 <p><a href="https://www.mkdocs.org" title="Official MkDocs site">MkDocs documentation</a></p>
