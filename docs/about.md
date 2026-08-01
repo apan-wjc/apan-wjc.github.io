@@ -54,6 +54,8 @@ mkdocs build
 git add -A && git commit -a -m "XXXXXXXXX"
 git push
 
+mkdocs gh-deploy
+or
 mkdocs gh-deploy --force
 ```
 
