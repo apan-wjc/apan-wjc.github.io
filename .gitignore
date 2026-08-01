@@ -1,4 +1,10 @@
 .envrc
+
+# venv/ — your Python virtual environment, machine-specific, shouldn't be in version control
+# site/ — generated output from mkdocs build; it's regenerated from source, no need to track it (and gh-deploy pushes it to a separate gh-pages branch anyway, 
+# not your main branch)
+# __pycache__/, *.pyc — Python bytecode cache, not needed
+
 venv/
 site/
 __pycache__/
