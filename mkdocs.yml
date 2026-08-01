@@ -1,4 +1,4 @@
-site_name: My Docs Project
+site_name: APan MkDocs
 theme:
   name: material
   palette:
@@ -19,4 +19,4 @@ theme:
 nav:
   - Home: index.md
   - About: about.md
-
+  - Note: note.md
