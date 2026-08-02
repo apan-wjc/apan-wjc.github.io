@@ -7,7 +7,8 @@ theme:
   features:
     - navigation.tabs
     - navigation.tabs.sticky   # keeps tabs visible when scrolling
-    - navigation.sections      # groups sidebar items into labeled sections
+    - navigation.indexes       # lets a folder's index.md serve as its landing page
+    # - navigation.sections      # groups sidebar items into labeled sections
     - navigation.top           # adds a "back to top" button
   palette:
     - media: "(prefers-color-scheme: light)"
@@ -29,7 +30,10 @@ nav:
   - Tech:
       - Overview: tech/index.md
       - MkDocs Setup: tech/mkdocs-setup.md
+      - Test01:
+          - test11: about/index11.md
+          - test12: about/index12.md
   - Note:
-      - On this site: note/index.md
+      - Notes: note/index.md
   - About:
       - This site: about/index.md
