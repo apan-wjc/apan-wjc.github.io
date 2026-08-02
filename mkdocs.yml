@@ -1,6 +1,8 @@
 site_name: APan MkDocs
 theme:
   name: material
+  icon:
+    logo: material/snowflake-variant       # sigma/panda/roman-numeral-9/snowflake-variant
   features:
     - navigation.tabs
     - navigation.tabs.sticky   # keeps tabs visible when scrolling
@@ -23,9 +25,10 @@ theme:
         name: Switch to light mode
 nav:
   - Home: index.md
-  - About: about.md
+  - About:
+      - This site: about/index.md
   - Note:
-      - Overview: note/index.md
+      - On this site: note/index.md
       - Linux Tips: note/linux-tips.md
       - Networking: note/networking.md
   - Tech:
