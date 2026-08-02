@@ -1,6 +1,11 @@
 site_name: APan MkDocs
 theme:
   name: material
+  features:
+    - navigation.tabs
+    - navigation.tabs.sticky   # keeps tabs visible when scrolling
+    - navigation.sections      # groups sidebar items into labeled sections
+    - navigation.top           # adds a "back to top" button
   palette:
     - media: "(prefers-color-scheme: light)"
       scheme: slate
@@ -19,4 +24,11 @@ theme:
 nav:
   - Home: index.md
   - About: about.md
-  - Note: note.md
+  - Note:
+      - Overview: note/index.md
+      - Linux Tips: note/linux-tips.md
+      - Networking: note/networking.md
+  - Tech:
+      - Overview: tech/index.md
+      - Python: tech/python.md
+      - MkDocs Setup: tech/mkdocs-setup.md
