@@ -35,6 +35,7 @@ theme:
 nav:
   - Home: index.md
   - Blog:
+      - 2034: blog/2034.md
       - 2026: blog/2026.md
   - Tech:
       - Overview: tech/index.md
@@ -48,3 +49,7 @@ nav:
       - Notes: note/index.md
   - About:
       - This site: about/index.md
+  - 日志:
+      - 备忘: 
+          - 金婚: 日志/golden-merriage.md
+      - 2026: 日志/2026.md
