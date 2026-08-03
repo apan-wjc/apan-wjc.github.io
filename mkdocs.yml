@@ -1,4 +1,11 @@
 site_name: APan MkDocs
+markdown_extensions:
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences
+  - attr_list   # for extra CSS
+extra_css:
+  - stylesheets/extra.css
 theme:
   name: material
   icon:
@@ -27,12 +34,16 @@ theme:
         name: Switch to light mode
 nav:
   - Home: index.md
+  - Blog:
+      - 2026: blog/2026.md
   - Tech:
       - Overview: tech/index.md
       - MkDocs Setup: tech/mkdocs-setup.md
-      - Test01:
-          - test11: about/index11.md
-          - test12: about/index12.md
+      - MkDocs: tech/mkdocs.md
+      - Bash:
+          - one-liner: tech/one-liner-bash.md
+      - Python:
+          - one-liner: tech/one-liner-python.md
   - Note:
       - Notes: note/index.md
   - About:
