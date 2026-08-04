@@ -1,3 +1,25 @@
+### add timestamp
+Install these pacages:
+```bash
+pip install mkdocs-git-revision-date-localized-plugin
+pip install tzdata
+```
+Then add the following into `mkdocs.yml`
+```yaml
+plugins:
+  - search:
+      lang:
+        - en
+        - zh
+  - git-revision-date-localized:
+      # type: timeago       # e.g. "3 days ago"
+      # type: date          # e.g. "August 4, 2026"
+      type: datetime        # e.g. "August 4, 2026 14:30"
+      timezone: America/Vancouver
+      locale: en
+      fallback_to_build_date: true   # avoids errors on files not yet committed to git
+```
+
 ### add picture
 The following HTML code can be added in md file directly to show a picture
 ```html

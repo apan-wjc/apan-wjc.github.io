@@ -13,8 +13,8 @@ plugins:
         - zh
   - git-revision-date-localized:
       # type: timeago       # e.g. "3 days ago"
-      # type: date        # e.g. "August 4, 2026"
-      type: datetime    # e.g. "August 4, 2026 14:30"
+      # type: date          # e.g. "August 4, 2026"
+      type: datetime        # e.g. "August 4, 2026 14:30"
       timezone: America/Vancouver
       locale: en
       fallback_to_build_date: true   # avoids errors on files not yet committed to git
