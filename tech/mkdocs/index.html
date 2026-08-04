@@ -76,7 +76,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#add-picture" class="md-skip">
+        <a href="#add-timestamp" class="md-skip">
           Skip to content
         </a>
       
@@ -684,6 +684,17 @@
       Table of contents
     </label>
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#add-timestamp" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        add timestamp
+      
+    </span>
+  </a>
+  
+</li>
       
         <li class="md-nav__item">
   <a href="#add-picture" class="md-nav__link">
@@ -1407,6 +1418,17 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
+  <a href="#add-timestamp" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        add timestamp
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#add-picture" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -1491,6 +1513,25 @@
 
   <h1>MkDocs</h1>
 
+<h3 id="add-timestamp">add timestamp</h3>
+<p>Install these pacages:
+<div class="highlight"><pre><span></span><code>pip<span class="w"> </span>install<span class="w"> </span>mkdocs-git-revision-date-localized-plugin
+pip<span class="w"> </span>install<span class="w"> </span>tzdata
+</code></pre></div>
+Then add the following into <code>mkdocs.yml</code>
+<div class="highlight"><pre><span></span><code><span class="nt">plugins</span><span class="p">:</span>
+<span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">search</span><span class="p">:</span>
+<span class="w">      </span><span class="nt">lang</span><span class="p">:</span>
+<span class="w">        </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">en</span>
+<span class="w">        </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">zh</span>
+<span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">git-revision-date-localized</span><span class="p">:</span>
+<span class="w">      </span><span class="c1"># type: timeago       # e.g. &quot;3 days ago&quot;</span>
+<span class="w">      </span><span class="c1"># type: date          # e.g. &quot;August 4, 2026&quot;</span>
+<span class="w">      </span><span class="nt">type</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">datetime</span><span class="w">        </span><span class="c1"># e.g. &quot;August 4, 2026 14:30&quot;</span>
+<span class="w">      </span><span class="nt">timezone</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">America/Vancouver</span>
+<span class="w">      </span><span class="nt">locale</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">en</span>
+<span class="w">      </span><span class="nt">fallback_to_build_date</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">true</span><span class="w">   </span><span class="c1"># avoids errors on files not yet committed to git</span>
+</code></pre></div></p>
 <h3 id="add-picture">add picture</h3>
 <p>The following HTML code can be added in md file directly to show a picture
 <div class="highlight"><pre><span></span><code><span class="p">&lt;</span><span class="nt">p</span> <span class="na">align</span><span class="o">=</span><span class="s">&quot;center&quot;</span><span class="p">&gt;</span>
@@ -1632,7 +1673,7 @@ The line above is rendered like this now:</p>
     <span class="md-icon" title="Last update">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1zM12.5 7v5.2l4 2.4-1 1L11 13V7zM11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-datetime" title="August 4, 2026 10:28:29 PDT">August 4, 2026 10:28:29</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-datetime" title="August 4, 2026 13:09:36 PDT">August 4, 2026 13:09:36</span>
   </span>
 
     
