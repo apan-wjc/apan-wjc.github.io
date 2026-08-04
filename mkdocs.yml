@@ -6,6 +6,9 @@ markdown_extensions:
   - attr_list   # for extra CSS
 extra_css:
   - stylesheets/extra.css
+plugins:
+  - search:
+      lang: [en, zh]
 theme:
   name: material
   icon:
@@ -52,6 +55,7 @@ nav:
   - About:
       - This site: about/index.md
   - 日志:
-      - 备忘: 
-          - 金婚: blogc/golden-merriage.md
       - 2026: blogc/2026.md
+      - 2025: blogc/2025.md
+      - 备忘:
+          - 金婚: blogc/golden-merriage.md

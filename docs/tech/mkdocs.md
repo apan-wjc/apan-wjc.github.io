@@ -1,3 +1,11 @@
+### add picture
+The following HTML code can be added in md file directly to show a picture
+```html
+<p align="center">
+  <img src="assets/2010-08-15_REO.rafting.by.REO.31.jpg" alt="Rafting" width="800">
+</p>
+```
+
 ### MkDocs features
 ```md
   features:
