@@ -9,7 +9,6 @@ extra_css:
 plugins:
   - search:
       lang:
-        - en
         - zh
 theme:
   name: material
