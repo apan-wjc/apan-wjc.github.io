@@ -8,7 +8,9 @@ extra_css:
   - stylesheets/extra.css
 plugins:
   - search:
-      lang: [en, zh]
+      lang:
+        - en
+        - zh
 theme:
   name: material
   icon:
