@@ -41,6 +41,8 @@ nav:
       - Overview: tech/index.md
       - MkDocs Setup: tech/mkdocs-setup.md
       - MkDocs: tech/mkdocs.md
+      - GitHub: 
+          - workflow: tech/workflow.md
       - Bash:
           - one-liner: tech/one-liner-bash.md
       - Python:
@@ -51,5 +53,5 @@ nav:
       - This site: about/index.md
   - 日志:
       - 备忘: 
-          - 金婚: 日志/golden-merriage.md
-      - 2026: 日志/2026.md
+          - 金婚: blogc/golden-merriage.md
+      - 2026: blogc/2026.md
