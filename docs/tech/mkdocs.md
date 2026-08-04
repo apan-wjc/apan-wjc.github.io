@@ -19,6 +19,7 @@ plugins:
       locale: en
       fallback_to_build_date: true   # avoids errors on files not yet committed to git
 ```
+it's not a single global timestamp, each page shows that specific file's last Git commit date.
 
 ### add picture
 The following HTML code can be added in md file directly to show a picture
