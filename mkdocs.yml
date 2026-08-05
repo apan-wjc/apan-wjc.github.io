@@ -53,12 +53,14 @@ nav:
       - Overview: tech/index.md
       - MkDocs Setup: tech/mkdocs-setup.md
       - MkDocs: tech/mkdocs.md
+      - Alpine:
+          - VM setup: tech/alpine_vm-setup.md
       - GitHub: 
-          - workflow: tech/workflow.md
+          - workflow: tech/github_workflow.md
       - Bash:
-          - one-liner: tech/one-liner-bash.md
+          - one-liner: tech/bash_one-liner.md
       - Python:
-          - one-liner: tech/one-liner-python.md
+          - one-liner: tech/python_one-liner.md
   - Note:
       - Notes: note/index.md
   - About:
@@ -67,4 +69,4 @@ nav:
       - 2026: blogc/2026.md
       - 2025: blogc/2025.md
       - 备忘:
-          - 金婚: blogc/golden-merriage.md
+          - 金婚: blogc/note_golden-merriage.md

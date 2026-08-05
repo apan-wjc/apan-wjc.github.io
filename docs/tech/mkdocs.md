@@ -1,3 +1,28 @@
+### from scratch
+```bash
+nn /root/.ssh/config
+
+ssh -T git@github-apan-wjc   # test
+Hi apan-wjc! You've successfully authenticated, but GitHub does not provide shell access.
+
+git clone git@github.com:apan-wjc/apan-wjc.github.io.git
+cd apan-wjc.github.io.git
+
+apk add git python3 py3-pip py3-virtualenv build-base libffi-dev
+
+virtualenv venv
+source venv/bin/activate
+
+pip install --upgrade pip
+pip install mkdocs mkdocs-material mkdocs-git-revision-date-localized-plugin tzdata
+
+mkdocs serve -a 192.168.56.39:8000   # live local MkDocs site
+
+mkdocs build   # will update site directory
+ln -s /opt/apan-wjc.github.io/site /var/www/html/Local-MkDocs-Site   # then this site can be seen under Nginx server, port 80
+
+mkdocs gh-deploy   # --force   # will update and deploy the gh-deploy branch at GitHub.
+```
 ### add timestamp
 Install these pacages:
 ```bash
