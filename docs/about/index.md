@@ -18,11 +18,11 @@ The internal site is located at:
 
 The following command can bring it up:
 ```bash
-ssh 192.168.56.25   # s25-25
+ssh 192.168.56.39   # s26-39
 cd /opt/apan-wjc.github.io
 
 source venv/bin/activate
-mkdocs serve -a 0.0.0.0:8000   # bring up a live site, any change shows lively.
+mkdocs serve -a 192.168.56.39:8000   # bring up a live site, any change shows lively.
 
 deactivate
 ```
