@@ -18,6 +18,7 @@ plugins:
       timezone: America/Vancouver
       locale: en
       fallback_to_build_date: true   # avoids errors on files not yet committed to git
+  - tags:
 theme:
   name: material
   icon:
@@ -65,8 +66,9 @@ nav:
       - Notes: note/index.md
   - About:
       - This site: about/index.md
+  - Tags: tags.md
   - 日志:
       - 2026: blogc/2026.md
       - 2025: blogc/2025.md
       - 备忘:
-          - 金婚: blogc/note_golden-merriage.md
+          - 金婚: blogc/golden-merriage.md

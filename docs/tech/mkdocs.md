@@ -23,6 +23,21 @@ ln -s /opt/apan-wjc.github.io/site /var/www/html/Local-MkDocs-Site   # then this
 
 mkdocs gh-deploy   # --force   # will update and deploy the gh-deploy branch at GitHub.
 ```
+### customize md file font
+add the following into ANY md file  
+```html
+<style>
+.small-font {
+  font-size: 0.7em;
+}
+</style>
+
+<div class="small-font">
+
+This text should look noticeably smaller than your other pages.
+
+</div>
+```
 ### add timestamp
 Install these pacages:
 ```bash

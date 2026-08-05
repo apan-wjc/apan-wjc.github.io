@@ -1,4 +1,10 @@
-### 金婚
+---
+icon: material/heart
+hide: toc
+title: 
+tags:
+  - 备忘
+---
 金婚前与 YY 共走 50 个地方。
 
 | No. | Date | Destination | Region/State/Province | Country | Notes |
