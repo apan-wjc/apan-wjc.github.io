@@ -12,7 +12,7 @@
         <link rel="prev" href="../mkdocs-setup/">
       
       
-        <link rel="next" href="../workflow/">
+        <link rel="next" href="../alpine_vm-setup/">
       
       
         
@@ -76,7 +76,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#add-timestamp" class="md-skip">
+        <a href="#from-scratch" class="md-skip">
           Skip to content
         </a>
       
@@ -540,6 +540,8 @@
       
         
       
+        
+      
     
     
     
@@ -686,6 +688,17 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
+  <a href="#from-scratch" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        from scratch
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#add-timestamp" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -803,7 +816,7 @@
   <span class="md-ellipsis">
     
   
-    GitHub
+    Alpine
   
 
     
@@ -819,7 +832,7 @@
             <span class="md-nav__icon md-icon"></span>
             
   
-    GitHub
+    Alpine
   
 
           </label>
@@ -832,14 +845,14 @@
   
   
     <li class="md-nav__item">
-      <a href="../workflow/" class="md-nav__link">
+      <a href="../alpine_vm-setup/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
     
   
-    workflow
+    VM setup
   
 
     
@@ -893,7 +906,7 @@
   <span class="md-ellipsis">
     
   
-    Bash
+    GitHub
   
 
     
@@ -909,7 +922,7 @@
             <span class="md-nav__icon md-icon"></span>
             
   
-    Bash
+    GitHub
   
 
           </label>
@@ -922,14 +935,14 @@
   
   
     <li class="md-nav__item">
-      <a href="../one-liner-bash/" class="md-nav__link">
+      <a href="../github_workflow/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
     
   
-    one-liner
+    workflow
   
 
     
@@ -983,7 +996,7 @@
   <span class="md-ellipsis">
     
   
-    Python
+    Bash
   
 
     
@@ -996,6 +1009,96 @@
         
         <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_6_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_3_6">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Bash
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../bash_one-liner/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    one-liner
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_7" >
+        
+          
+          <label class="md-nav__link" for="__nav_3_7" id="__nav_3_7_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Python
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_7_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_7">
             <span class="md-nav__icon md-icon"></span>
             
   
@@ -1012,7 +1115,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../one-liner-python/" class="md-nav__link">
+      <a href="../python_one-liner/" class="md-nav__link">
         
   
   
@@ -1357,7 +1460,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../blogc/golden-merriage/" class="md-nav__link">
+      <a href="../../blogc/note_golden-merriage.md" class="md-nav__link">
         
   
   
@@ -1416,6 +1519,17 @@
       Table of contents
     </label>
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#from-scratch" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        from scratch
+      
+    </span>
+  </a>
+  
+</li>
       
         <li class="md-nav__item">
   <a href="#add-timestamp" class="md-nav__link">
@@ -1513,6 +1627,30 @@
 
   <h1>MkDocs</h1>
 
+<h3 id="from-scratch">from scratch</h3>
+<div class="highlight"><pre><span></span><code>nn<span class="w"> </span>/root/.ssh/config
+
+ssh<span class="w"> </span>-T<span class="w"> </span>git@github-apan-wjc<span class="w">   </span><span class="c1"># test</span>
+Hi<span class="w"> </span>apan-wjc!<span class="w"> </span>You<span class="err">&#39;</span>ve<span class="w"> </span>successfully<span class="w"> </span>authenticated,<span class="w"> </span>but<span class="w"> </span>GitHub<span class="w"> </span>does<span class="w"> </span>not<span class="w"> </span>provide<span class="w"> </span>shell<span class="w"> </span>access.
+
+git<span class="w"> </span>clone<span class="w"> </span>git@github.com:apan-wjc/apan-wjc.github.io.git
+<span class="nb">cd</span><span class="w"> </span>apan-wjc.github.io.git
+
+apk<span class="w"> </span>add<span class="w"> </span>git<span class="w"> </span>python3<span class="w"> </span>py3-pip<span class="w"> </span>py3-virtualenv<span class="w"> </span>build-base<span class="w"> </span>libffi-dev
+
+virtualenv<span class="w"> </span>venv
+<span class="nb">source</span><span class="w"> </span>venv/bin/activate
+
+pip<span class="w"> </span>install<span class="w"> </span>--upgrade<span class="w"> </span>pip
+pip<span class="w"> </span>install<span class="w"> </span>mkdocs<span class="w"> </span>mkdocs-material<span class="w"> </span>mkdocs-git-revision-date-localized-plugin<span class="w"> </span>tzdata
+
+mkdocs<span class="w"> </span>serve<span class="w"> </span>-a<span class="w"> </span><span class="m">192</span>.168.56.39:8000<span class="w">   </span><span class="c1"># live local MkDocs site</span>
+
+mkdocs<span class="w"> </span>build<span class="w">   </span><span class="c1"># will update site directory</span>
+ln<span class="w"> </span>-s<span class="w"> </span>/opt/apan-wjc.github.io/site<span class="w"> </span>/var/www/html/Local-MkDocs-Site<span class="w">   </span><span class="c1"># then this site can be seen under Nginx server, port 80</span>
+
+mkdocs<span class="w"> </span>gh-deploy<span class="w">   </span><span class="c1"># --force   # will update and deploy the gh-deploy branch at GitHub.</span>
+</code></pre></div>
 <h3 id="add-timestamp">add timestamp</h3>
 <p>Install these pacages:
 <div class="highlight"><pre><span></span><code>pip<span class="w"> </span>install<span class="w"> </span>mkdocs-git-revision-date-localized-plugin
@@ -1674,7 +1812,7 @@ The line above is rendered like this now:</p>
     <span class="md-icon" title="Last update">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1zM12.5 7v5.2l4 2.4-1 1L11 13V7zM11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-datetime" title="August 4, 2026 13:19:52 PDT">August 4, 2026 13:19:52</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-datetime" title="August 5, 2026 11:30:53 PDT">August 5, 2026 11:30:53</span>
   </span>
 
     
