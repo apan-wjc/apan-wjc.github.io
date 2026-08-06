@@ -1483,7 +1483,18 @@
 
   <h1>Daily cli</h1>
 
+<div class="highlight"><pre><span></span><code>ssh<span class="w"> </span>s240
+<span class="nb">cd</span><span class="w"> </span>/opt/github/KantarProfiles
 
+<span class="nb">export</span><span class="w"> </span><span class="nv">REPO</span><span class="o">=</span><span class="s1">&#39;busi-infrastructure&#39;</span>
+git<span class="w"> </span>clone<span class="w"> </span>git@github.com:KantarProfiles/<span class="nv">$REPO</span>.git
+<span class="nb">cd</span><span class="w"> </span><span class="nv">$REPO</span>
+
+git<span class="w"> </span>status
+git<span class="w"> </span>pull
+
+<span class="nb">export</span><span class="w"> </span><span class="nv">BRANCH</span><span class="o">=</span><span class="s1">&#39;XXX/xxx-xxx&#39;</span>
+</code></pre></div>
 
 
 
