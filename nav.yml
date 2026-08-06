@@ -1,20 +1,21 @@
 nav:
   - Home: index.md
   - Blog:
-      - 2034: blog/2034.md
-      - 2026: blog/2026.md
+      - blog/2034.md
+      - blog/2026.md
   - Tech:
-      - Overview: tech/index.md
-      - MkDocs Setup: tech/mkdocs-setup.md
-      - MkDocs: tech/mkdocs.md
+      - tech/index.md
+      - tech/mkdocs-setup.md
+      - tech/mkdocs.md
       - Alpine:
-          - VM setup: tech/alpine_vm-setup.md
+          - alpine/vm-setup.md
       - GitHub:
-          - workflow: tech/github_workflow.md
+          - github/daily-cli.md
+          - github/workflow.md
       - Bash:
-          - one-liner: tech/bash_one-liner.md
+          - bash/one-liner.md
       - Python:
-          - one-liner: tech/python_one-liner.md
+          - python/one-liner.md
   - Note:
       - note/index.md
   - About:
