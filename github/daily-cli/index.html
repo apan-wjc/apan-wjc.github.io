@@ -75,6 +75,11 @@
     <label class="md-overlay" for="__drawer"></label>
     <div data-md-component="skip">
       
+        
+        <a href="#normal" class="md-skip">
+          Skip to content
+        </a>
+      
     </div>
     <div data-md-component="announce">
       
@@ -829,6 +834,24 @@
       
       
       
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Daily cli
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <a href="./" class="md-nav__link md-nav__link--active">
         
   
@@ -845,6 +868,45 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#normal" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Normal
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#main-changed" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Main changed
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
       
     </li>
   
@@ -1419,7 +1481,7 @@
   <span class="md-ellipsis">
     
   
-    None
+    金婚
   
 
     
@@ -1466,6 +1528,36 @@
   
   
   
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#normal" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Normal
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#main-changed" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Main changed
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
 </nav>
                   </div>
                 </div>
@@ -1483,8 +1575,13 @@
 
   <h1>Daily cli</h1>
 
+<h3 id="normal">Normal</h3>
 <div class="highlight"><pre><span></span><code>ssh<span class="w"> </span>s240
 <span class="nb">cd</span><span class="w"> </span>/opt/github/KantarProfiles
+
+<span class="c1"># verify you are ox0</span>
+ssh<span class="w"> </span>-T<span class="w"> </span>git@github.com
+<span class="s2">&quot;Hi ox0! You&#39;ve successfully authenticated, but GitHub does not provide shell access.&quot;</span>
 
 <span class="nb">export</span><span class="w"> </span><span class="nv">REPO</span><span class="o">=</span><span class="s1">&#39;busi-infrastructure&#39;</span>
 git<span class="w"> </span>clone<span class="w"> </span>git@github.com:KantarProfiles/<span class="nv">$REPO</span>.git
@@ -1494,6 +1591,34 @@ git<span class="w"> </span>status
 git<span class="w"> </span>pull
 
 <span class="nb">export</span><span class="w"> </span><span class="nv">BRANCH</span><span class="o">=</span><span class="s1">&#39;XXX/xxx-xxx&#39;</span>
+git<span class="w"> </span>checkout<span class="w"> </span>-B<span class="w"> </span><span class="nv">$BRANCH</span>
+
+/opt/github/git.config.sh
+
+<span class="c1"># do modification here</span>
+
+git<span class="w"> </span>diff
+git<span class="w"> </span>status
+
+git<span class="w"> </span>add<span class="w"> </span>-A<span class="w"> </span><span class="o">&amp;&amp;</span><span class="w"> </span>git<span class="w"> </span>commit<span class="w"> </span>-a<span class="w"> </span>-m<span class="w"> </span><span class="nv">$BRANCH</span>
+git<span class="w"> </span>push<span class="w"> </span>--set-upstream<span class="w"> </span>origin<span class="w"> </span><span class="nv">$BRANCH</span>
+
+<span class="c1"># clean up</span>
+<span class="nb">cd</span><span class="w"> </span>/opt/github/Kantar_Profiles
+<span class="se">\r</span>m<span class="w"> </span>-rf<span class="w"> </span><span class="nv">$REPO</span>
+</code></pre></div>
+<h3 id="main-changed">Main changed</h3>
+<div class="highlight"><pre><span></span><code><span class="c1"># merge the branch to new main</span>
+git<span class="w"> </span>fetch<span class="w"> </span>origin
+git<span class="w"> </span>checkout<span class="w"> </span><span class="nv">$BRANCH</span>
+/opt/github/git.config.sh
+git<span class="w"> </span>merge<span class="w"> </span>origin/main
+
+<span class="c1"># edit the conflicted files, then</span>
+git<span class="w"> </span>add<span class="w"> </span>&lt;file<span class="o">(</span>s<span class="o">)</span>-you-fixed&gt;
+git<span class="w"> </span>commit<span class="w">   </span><span class="c1"># completes the merge commit</span>
+
+git<span class="w"> </span>push<span class="w"> </span>origin<span class="w"> </span><span class="nv">$BRANCH</span>
 </code></pre></div>
 
 
@@ -1506,6 +1631,8 @@ git<span class="w"> </span>pull
     
   
   
+    
+  
 
 
   <aside class="md-source-file">
@@ -1515,10 +1642,19 @@ git<span class="w"> </span>pull
     <span class="md-icon" title="Last update">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1zM12.5 7v5.2l4 2.4-1 1L11 13V7zM11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-datetime" title="August 6, 2026 09:44:57 PDT">August 6, 2026 09:44:57</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-custom" title="August 6, 2026 16:54:42 PDT">2026-08-06 16.54</span>
   </span>
 
     
+    
+      
+  <span class="md-source-file__fact">
+    <span class="md-icon" title="Created">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M14.47 15.08 11 13V7h1.5v5.25l3.08 1.83c-.41.28-.79.62-1.11 1m-1.39 4.84c-.36.05-.71.08-1.08.08-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8c0 .37-.03.72-.08 1.08.69.1 1.33.32 1.92.64.1-.56.16-1.13.16-1.72 0-5.5-4.5-10-10-10S2 6.5 2 12s4.47 10 10 10c.59 0 1.16-.06 1.72-.16-.32-.59-.54-1.23-.64-1.92M18 15v3h-3v2h3v3h2v-3h3v-2h-3v-3z"/></svg>
+    </span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-custom" title="August 6, 2026 09:44:57 PDT">2026-08-06 09.44</span>
+  </span>
+
     
     
     
