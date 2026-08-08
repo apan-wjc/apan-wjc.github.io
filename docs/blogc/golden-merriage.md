@@ -1,7 +1,7 @@
 ---
 icon: material/heart
 hide: toc
-title: 
+title: 金婚 
 tags:
   - 备忘
 ---
