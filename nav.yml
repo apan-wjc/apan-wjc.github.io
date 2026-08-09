@@ -1,5 +1,11 @@
 nav:
   - Home: index.md
+  - Apps:
+      - Overview: apps/index.md
+      - Clock: apps/clock.md
+      - Classic Clock: apps/classic-clock.md
+      - Anim Clock: apps/anim-clock.md
+      - Flip Clock: apps/flip-clock.md
   - Blog:
       - blog/2034.md
       - blog/2026.md
