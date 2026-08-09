@@ -34,3 +34,7 @@ python3 -c "import secrets,string;print(''.join(secrets.choice(string.ascii_lett
 ```python
 python3 -c "import urllib.request; print(urllib.request.urlopen('https://api.ipify.org').read().decode())"
 ```
+### if an IP belongs to the subnet
+```python
+for ip in 192.168.100.9 10.74.153.205;   do python3 -c "import ipaddress; print('$ip', ipaddress.ip_address('$ip') in ipaddress.ip_network('10.74.144.0/20'))"; done
+```

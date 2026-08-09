@@ -5,12 +5,13 @@ nav:
       - blog/2026.md
   - Tech:
       - tech/index.md
-      - tech/mkdocs-setup.md
-      - tech/mkdocs.md
+      - tech/resource.md
+      - MkDocs:
+          - mkdocs/practice.md
+          - mkdocs/setup.md
       - Alpine:
           - alpine/vm-setup.md
       - GitHub:
-          - github/resource.md
           - github/daily-cli.md
           - github/workflow.md
       - Bash:
