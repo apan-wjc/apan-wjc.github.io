@@ -35,6 +35,7 @@ theme:
     - navigation.indexes       # lets a folder's index.md serve as its landing page
     # - navigation.sections      # groups sidebar items into labeled sections
     - navigation.top           # adds a "back to top" button
+    - content.code.copy        # 代码内容给一个复制按钮
   palette:
     - media: "(prefers-color-scheme: light)"
       scheme: slate

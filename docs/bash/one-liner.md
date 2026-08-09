@@ -1,6 +1,7 @@
 ### 9x9 multiple table
-`seq 1 9 | awk '{for(j=1;j<=$1;j++) printf "%d×%d=%-2d ", j, $1, j*$1; print ""}'`
-
+```bash
+seq 1 9 | awk '{for(j=1;j<=$1;j++) printf "%d×%d=%-2d ", j, $1, j*$1; print ""}'
+```
 ### Pascal's triangle
 ```bash
 N=9

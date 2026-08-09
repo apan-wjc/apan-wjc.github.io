@@ -10,6 +10,7 @@ nav:
       - Alpine:
           - alpine/vm-setup.md
       - GitHub:
+          - github/resource.md
           - github/daily-cli.md
           - github/workflow.md
       - Bash:
