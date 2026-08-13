@@ -1,0 +1,48 @@
+tian_gan:
+  tg_title: "天干 (Ten Heavenly Stems)"
+  tg_message: "天干通常用拼音表示，因为它们本身是中文字符，翻译成英文单词没有实际意义。"
+  tg_items:
+    - "甲 - Jia"
+    - "乙 - Yi"
+    - "丙 - Bing"
+    - "丁 - Ding"
+    - "戊 - Wu"
+    - "己 - Ji"
+    - "庚 - Geng"
+    - "辛 - Xin"
+    - "壬 - Ren"
+    - "癸 - Gui"
+
+di_zhi:
+  dz_title: "地支 (Twelve Earthly Branches)"
+  dz_message: "地支通常用拼音表示，因为它们本身是中文字符，翻译成英文单词没有实际意义。"
+  dz_items:
+    - "子 - Zi"
+    - "丑 - Chou"
+    - "寅 - Yin"
+    - "卯 - Mao"
+    - "辰 - Chen"
+    - "巳 - Si"
+    - "午 - Wu"
+    - "未 - Wei"
+    - "申 - Shen"
+    - "酉 - You"
+    - "戌 - Xu"
+    - "亥 - Hai"
+
+sheng_xiao:
+  sx_title: "十二生肖 (Chinese Zodiac)"
+  sx_message: "传统顺序排列的十二生肖，英文翻译可能会因文化语境略有变化，但以下是最常用的表达方式。"
+  sx_items:
+    - "鼠 - Rat"
+    - "牛 - Ox"
+    - "虎 - Tiger"
+    - "兔 - Rabbit"
+    - "龙 - Dragon"
+    - "蛇 - Snake"
+    - "马 - Horse"
+    - "羊 - Goat (或 Sheep)"
+    - "猴 - Monkey"
+    - "鸡 - Rooster (或 Chicken)"
+    - "狗 - Dog"
+    - "猪 - Pig"

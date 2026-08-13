@@ -1,3 +1,45 @@
+### add page live render
+Add plugin `pip install mkdocs-macros-plugin`
+```yaml
+plugins:
+  - search:
+      lang:
+        - en
+        - zh
+  ... ...
+  - macros:   # pip install mkdocs-macros-plugin, to make md file live replacement working
+      include_yaml:
+        - cc: docs/dushu/ChineseCultrure.yml   # specify the data file, yaml
+```
+Sample data yaml file:
+```yaml
+tian_gan:
+  tg_title: "天干 (Ten Heavenly Stems)"
+  tg_message: "天干通常用拼音表示，因为它们本身是中文字符，翻译成英文单词没有实际意义。"
+  tg_items:
+    - "甲 - Jia"
+    - "乙 - Yi"
+    - "丙 - Bing"
+    - "丁 - Ding"
+    - "戊 - Wu"
+    - "己 - Ji"
+    - "庚 - Geng"
+    - "辛 - Xin"
+    - "壬 - Ren"
+    - "癸 - Gui"
+```
+Smaple live page md file:
+```md
+{% if cc.tian_gan %}
+  <h3>{{ cc.tian_gan.tg_title }}</h3>
+  <p>{{ cc.tian_gan.tg_message }}</p>
+  <ol>
+    {% for tg_item in cc.tian_gan.tg_items %}
+      <li>{{ tg_item }}</li>
+    {% endfor %}
+  </ol>
+{% endif %}
+```
 ### from scratch
 ```bash
 nn /root/.ssh/config
