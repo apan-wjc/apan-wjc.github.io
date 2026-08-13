@@ -76,7 +76,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#from-scratch" class="md-skip">
+        <a href="#add-page-live-render" class="md-skip">
           Skip to content
         </a>
       
@@ -379,7 +379,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="../../dushu/FanHua/" class="md-tabs__link">
+        <a href="../../dushu/ChineseCultrure/" class="md-tabs__link">
           
   
   
@@ -1001,6 +1001,17 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
+  <a href="#add-page-live-render" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        add page live render
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#from-scratch" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -1554,6 +1565,10 @@
           
         
       
+        
+      
+        
+      
     
     
     
@@ -1586,6 +1601,11 @@
 
             </a>
             
+              
+              <label class="md-nav__link " for="__nav_5" id="__nav_5_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
           </div>
         
         <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
@@ -1599,6 +1619,62 @@
           </label>
           <ul class="md-nav__list" data-md-scrollfix>
             
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../note/legoj/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    LegoJ
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../note/legox/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    LegoX
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
               
             
           </ul>
@@ -2196,6 +2272,8 @@
       
         
       
+        
+      
     
     
     
@@ -2238,6 +2316,34 @@
 
           </label>
           <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../dushu/ChineseCultrure/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    天干、地支、生肖
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
             
               
                 
@@ -2297,6 +2403,17 @@
       Table of contents
     </label>
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#add-page-live-render" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        add page live render
+      
+    </span>
+  </a>
+  
+</li>
       
         <li class="md-nav__item">
   <a href="#from-scratch" class="md-nav__link">
@@ -2416,6 +2533,61 @@
 
   <h1>Practice</h1>
 
+<h3 id="add-page-live-render">add page live render</h3>
+<p>Add plugin <code>pip install mkdocs-macros-plugin</code>
+<div class="highlight"><pre><span></span><code><span class="nt">plugins</span><span class="p">:</span>
+<span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">search</span><span class="p">:</span>
+<span class="w">      </span><span class="nt">lang</span><span class="p">:</span>
+<span class="w">        </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">en</span>
+<span class="w">        </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">zh</span>
+<span class="w">  </span><span class="l l-Scalar l-Scalar-Plain">... ...</span>
+<span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">macros</span><span class="p">:</span><span class="w">   </span><span class="c1"># pip install mkdocs-macros-plugin, to make md file live replacement working</span>
+<span class="w">      </span><span class="nt">include_yaml</span><span class="p">:</span>
+<span class="w">        </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">cc</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">docs/dushu/ChineseCultrure.yml</span><span class="w">   </span><span class="c1"># specify the data file, yaml</span>
+</code></pre></div>
+Sample data yaml file:
+<div class="highlight"><pre><span></span><code><span class="nt">tian_gan</span><span class="p">:</span>
+<span class="w">  </span><span class="nt">tg_title</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;天干</span><span class="nv"> </span><span class="s">(Ten</span><span class="nv"> </span><span class="s">Heavenly</span><span class="nv"> </span><span class="s">Stems)&quot;</span>
+<span class="w">  </span><span class="nt">tg_message</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;天干通常用拼音表示，因为它们本身是中文字符，翻译成英文单词没有实际意义。&quot;</span>
+<span class="w">  </span><span class="nt">tg_items</span><span class="p">:</span>
+<span class="w">    </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="s">&quot;甲</span><span class="nv"> </span><span class="s">-</span><span class="nv"> </span><span class="s">Jia&quot;</span>
+<span class="w">    </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="s">&quot;乙</span><span class="nv"> </span><span class="s">-</span><span class="nv"> </span><span class="s">Yi&quot;</span>
+<span class="w">    </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="s">&quot;丙</span><span class="nv"> </span><span class="s">-</span><span class="nv"> </span><span class="s">Bing&quot;</span>
+<span class="w">    </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="s">&quot;丁</span><span class="nv"> </span><span class="s">-</span><span class="nv"> </span><span class="s">Ding&quot;</span>
+<span class="w">    </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="s">&quot;戊</span><span class="nv"> </span><span class="s">-</span><span class="nv"> </span><span class="s">Wu&quot;</span>
+<span class="w">    </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="s">&quot;己</span><span class="nv"> </span><span class="s">-</span><span class="nv"> </span><span class="s">Ji&quot;</span>
+<span class="w">    </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="s">&quot;庚</span><span class="nv"> </span><span class="s">-</span><span class="nv"> </span><span class="s">Geng&quot;</span>
+<span class="w">    </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="s">&quot;辛</span><span class="nv"> </span><span class="s">-</span><span class="nv"> </span><span class="s">Xin&quot;</span>
+<span class="w">    </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="s">&quot;壬</span><span class="nv"> </span><span class="s">-</span><span class="nv"> </span><span class="s">Ren&quot;</span>
+<span class="w">    </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="s">&quot;癸</span><span class="nv"> </span><span class="s">-</span><span class="nv"> </span><span class="s">Gui&quot;</span>
+</code></pre></div>
+Smaple live page md file:
+<div class="highlight"><pre><span></span><code>  &lt;h3&gt;天干 (Ten Heavenly Stems)&lt;/h3&gt;
+  &lt;p&gt;天干通常用拼音表示，因为它们本身是中文字符，翻译成英文单词没有实际意义。&lt;/p&gt;
+  &lt;ol&gt;
+
+      &lt;li&gt;甲 - Jia&lt;/li&gt;
+
+      &lt;li&gt;乙 - Yi&lt;/li&gt;
+
+      &lt;li&gt;丙 - Bing&lt;/li&gt;
+
+      &lt;li&gt;丁 - Ding&lt;/li&gt;
+
+      &lt;li&gt;戊 - Wu&lt;/li&gt;
+
+      &lt;li&gt;己 - Ji&lt;/li&gt;
+
+      &lt;li&gt;庚 - Geng&lt;/li&gt;
+
+      &lt;li&gt;辛 - Xin&lt;/li&gt;
+
+      &lt;li&gt;壬 - Ren&lt;/li&gt;
+
+      &lt;li&gt;癸 - Gui&lt;/li&gt;
+
+  &lt;/ol&gt;
+</code></pre></div></p>
 <h3 id="from-scratch">from scratch</h3>
 <div class="highlight"><pre><span></span><code>nn<span class="w"> </span>/root/.ssh/config
 
@@ -2617,7 +2789,7 @@ The line above is rendered like this now:</p>
     <span class="md-icon" title="Last update">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1zM12.5 7v5.2l4 2.4-1 1L11 13V7zM11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-custom" title="August 5, 2026 13:43:22 PDT">2026-08-05 13.43</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-custom" title="August 13, 2026 12:45:35 PDT">2026-08-13 12.45</span>
   </span>
 
     
