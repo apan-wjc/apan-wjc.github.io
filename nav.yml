@@ -13,6 +13,7 @@ nav:
       - tech/index.md
       - tech/resource.md
       - MkDocs:
+          - mkdocs/front-matter.md
           - mkdocs/practice.md
           - mkdocs/setup.md
       - Alpine:
