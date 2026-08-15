@@ -12,7 +12,7 @@
         <link rel="prev" href="../../github/workflow/">
       
       
-        <link rel="next" href="../../python/one-liner/">
+        <link rel="next" href="../../python/import-this/">
       
       
         
@@ -50,6 +50,8 @@
     
     
       <link rel="stylesheet" href="../../stylesheets/extra.css">
+    
+      <link rel="stylesheet" href="../../termynal.css">
     
     <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
@@ -1438,6 +1440,8 @@
       
         
       
+        
+      
     
     
     
@@ -1480,6 +1484,34 @@
 
           </label>
           <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../python/import-this/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Python 🐍
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
             
               
                 
@@ -2420,6 +2452,8 @@
 <h3 id="9x9-multiple-table">9x9 multiple table</h3>
 <div class="highlight"><pre><span></span><code>seq<span class="w"> </span><span class="m">1</span><span class="w"> </span><span class="m">9</span><span class="w"> </span><span class="p">|</span><span class="w"> </span>awk<span class="w"> </span><span class="s1">&#39;{for(j=1;j&lt;=$1;j++) printf &quot;%d×%d=%-2d &quot;, j, $1, j*$1; print &quot;&quot;}&#39;</span>
 </code></pre></div>
+<div class="termy" data-termynal data-ty-macos data-ty-title="bash"><span data-ty="input" data-ty-prompt="$">seq 1 9 | awk '{for(j=1;j&lt;=$1;j++) printf &quot;%d×%d=%-2d &quot;, j, $1, j*$1; print &quot;&quot;}'</span><span data-ty><br>1×1=1<br>1×2=2  2×2=4<br>1×3=3  2×3=6  3×3=9<br>1×4=4  2×4=8  3×4=12 4×4=16<br>1×5=5  2×5=10 3×5=15 4×5=20 5×5=25<br>1×6=6  2×6=12 3×6=18 4×6=24 5×6=30 6×6=36<br>1×7=7  2×7=14 3×7=21 4×7=28 5×7=35 6×7=42 7×7=49<br>1×8=8  2×8=16 3×8=24 4×8=32 5×8=40 6×8=48 7×8=56 8×8=64<br>1×9=9  2×9=18 3×9=27 4×9=36 5×9=45 6×9=54 7×9=63 8×9=72 9×9=81<br></span></div>
+
 <h3 id="pascals-triangle">Pascal's triangle</h3>
 <div class="highlight"><pre><span></span><code><span class="nv">N</span><span class="o">=</span><span class="m">9</span>
 seq<span class="w"> </span><span class="m">0</span><span class="w"> </span><span class="s2">&quot;</span><span class="nv">$N</span><span class="s2">&quot;</span><span class="w"> </span><span class="p">|</span><span class="w"> </span>awk<span class="w"> </span>-v<span class="w"> </span><span class="nv">N</span><span class="o">=</span><span class="s2">&quot;</span><span class="nv">$N</span><span class="s2">&quot;</span><span class="w"> </span><span class="s1">&#39;</span>
@@ -2457,7 +2491,7 @@ seq<span class="w"> </span><span class="m">0</span><span class="w"> </span><span
     <span class="md-icon" title="Last update">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1zM12.5 7v5.2l4 2.4-1 1L11 13V7zM11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-custom" title="August 8, 2026 19:28:17 PDT">2026-08-08 19.28</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-custom" title="August 14, 2026 20:36:48 PDT">2026-08-14 20.36</span>
   </span>
 
     
@@ -2526,6 +2560,8 @@ seq<span class="w"> </span><span class="m">0</span><span class="w"> </span><span
     
     
       <script src="../../assets/javascripts/bundle.d7400e89.min.js"></script>
+      
+        <script src="../../termynal.js"></script>
       
     
   </body>
