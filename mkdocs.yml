@@ -6,6 +6,11 @@ markdown_extensions:
   - pymdownx.details
   - pymdownx.superfences
   - attr_list   # for extra CSS
+  - termynal:
+      prompt_literal_start:
+        - "#"
+        - "$"
+        - ">"
 extra_css:
   - stylesheets/extra.css
 plugins:
