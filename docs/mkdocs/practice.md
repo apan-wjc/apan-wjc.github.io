@@ -1,3 +1,59 @@
+### using termynal
+```bash
+pip install termynal
+```
+Then add this `<!-- termynal -->` before ANY  
+<!-- termynal -->
+```bash
+$ ls -al
+```
+### using Github workflow
+Instead of using local environment to run `mkdocs gh-deploy --force`  
+to deploy Mkdocs site at Github, one can do the following:
+<!-- termynal -->
+```
+$ cd /opt/apan-wjc.github.io
+$ source venv/bin/activate
+$ pip freeze > requirements.txt
+```
+And adding this file:  
+`.github/workflows/deploy.yml`
+```yaml
+name: Deploy MkDocs site
+
+on:
+  push:
+    branches:
+      - main
+
+permissions:
+  contents: write
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0   # full history, needed for git-revision-date plugin
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+
+      - name: Configure Git user
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+
+      - name: Deploy to GitHub Pages
+        run: mkdocs gh-deploy --force
+```
 ### add page live render
 Add plugin `pip install mkdocs-macros-plugin`
 ```yaml
