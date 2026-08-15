@@ -33,6 +33,7 @@ six==1.17.0
 smmap==5.0.3
 super_collections==0.6.2
 termcolor==3.3.0
+termynal==0.14.0
 tzdata==2026.3
 urllib3==2.7.0
 watchdog==6.0.0

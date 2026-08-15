@@ -25,6 +25,7 @@ nav:
       - Bash:
           - bash/one-liner.md
       - Python:
+          - python/import-this.md
           - python/one-liner.md
   - Note:
       - note/index.md

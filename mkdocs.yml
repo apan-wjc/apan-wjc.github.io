@@ -24,6 +24,7 @@ plugins:
       fallback_to_build_date: true   # avoids errors on files not yet committed to git
       enable_creation_date: true
   - tags:
+  - termynal
   - macros:   # pip install mkdocs-macros-plugin, to make md file live replacement working
       include_yaml:
         - cc: docs/dushu/ChineseCultrure.yml
