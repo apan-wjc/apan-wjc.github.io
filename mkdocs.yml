@@ -11,6 +11,8 @@ markdown_extensions:
         - "#"
         - "$"
         - ">"
+  - pymdownx.tabbed:
+      alternate_style: true
 extra_css:
   - stylesheets/extra.css
 plugins:
@@ -35,7 +37,7 @@ plugins:
         - cc: docs/dushu/ChineseCultrure.yml
         - lgj: docs/note/legoj.yml
         - lgx: docs/note/legox.yml
-
+        - gm: docs/blogc/golden-merriage.yml
 theme:
   name: material
   icon:

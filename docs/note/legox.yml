@@ -1,4 +1,12 @@
 lego_sets:
+  - set_number: "60483"
+    set_name: "Rides – Construction Loader"
+    purchase_date: "2026-08-15"
+    price: "$12.99"
+    order: 4
+    url: "https://www.lego.com/en-ca/product/rides-construction-loader-60483"
+    image: "assets/legox-image/60483.png"
+
   - set_number: "60482"
     set_name: "Rides – Fire Truck"
     purchase_date: "2026-07-25"

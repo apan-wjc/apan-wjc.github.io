@@ -1,27 +1,67 @@
 ---
 icon: material/heart
 hide: toc
-title: 金婚 
+title: 金婚
 tags:
   - 备忘
 ---
 金婚前与 YY 共走 50 个地方。
 
-| No. | Date | Destination | Region/State/Province | Country | Notes |
-|---:|------|-------------|-----------------------|---------|-------|
-| 16 | 2025/08 | Montreal | QC | Canada | |
-| 15 | 2023/04 | Cairo, Aswan, Luxor | — | Egypt | |
-| 14 | 2017/09 | Honolulu | Hawaii | USA | |
-| 13 | 2014/10 | Los Angeles | California | USA | |
-| 12 | 2012/04 | San Diego | California | USA | |
-| 11 | 2010/05 | Portland | Oregon | USA | |
-| 10 | 2010/05 | Alaska Cruise | Alaska | USA | Cruise |
-| 9 | 2009/04 | Seattle | Washington | USA | |
-| 8 | 2007/08 | Las Vegas | Nevada | USA | Revisited: 2022/11 |
-| 7 | 2004/07 | Victoria | BC | Canada | |
-| 6 | 2003/06 | Okanagan | BC | Canada | |
-| 5 | 1999/09 | 香港 (Hong Kong) | — | China | |
-| 4 | 1998/09 | 南京 (Nanjing) | 江苏 (Jiangsu) | China | |
-| 3 | 1996/10 | 九寨沟 (Jiuzhaigou) | 四川 (Sichuan) | China | |
-| 2 | 1996/08 | 普陀山 (Mount Putuo) | 浙江 (Zhejiang) | China | |
-| 1 | 1995/06 | 杭州 (Hangzhou) | 浙江 (Zhejiang) | China | |
+<style>
+
+.md-content {
+  max-width: none;
+}
+.md-grid {
+  max-width: 1400px;  /* adjust to taste — default is usually ~1200px */
+}
+
+/* Dark mode striping (white overlay) */
+[data-md-color-scheme="slate"] .travel-table tr:nth-child(even) {
+  background-color: rgba(255, 255, 255, 0.04);
+}
+[data-md-color-scheme="slate"] .travel-table tr:hover {
+  background-color: rgba(255, 255, 255, 0.08);
+}
+
+/* Light mode striping (dark overlay) */
+[data-md-color-scheme="default"] .travel-table tr:nth-child(even) {
+  background-color: rgba(0, 0, 0, 0.05);
+}
+[data-md-color-scheme="default"] .travel-table tr:hover {
+  background-color: rgba(0, 0, 0, 0.09);
+}
+
+.travel-table tr:nth-child(odd) {
+  background-color: transparent;
+}
+
+.travel-table {
+  font-size: 0.8em;
+}
+</style>
+
+<table class="travel-table">
+  <thead>
+    <tr>
+      <th>No.</th>
+      <th>Date</th>
+      <th>Destination</th>
+      <th>Region</th>
+      <th>Country</th>
+      <th>Notes</th>
+    </tr>
+  </thead>
+  <tbody>
+    {% for trip in gm.travels | sort(attribute='number', reverse=true) %}
+    <tr>
+      <td>{{ trip.number }}</td>
+      <td>{{ trip.date }}</td>
+      <td>{{ trip.destination }}</td>
+      <td>{{ trip.region }}</td>
+      <td>{{ trip.country }}</td>
+      <td>{{ trip.notes }}</td>
+    </tr>
+    {% endfor %}
+  </tbody>
+</table>

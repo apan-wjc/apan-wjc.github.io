@@ -1,0 +1,112 @@
+travels:
+  - number: 16
+    date: "2025/08"
+    destination: "Montreal"
+    region: "QC"
+    country: "Canada"
+    notes: ""
+
+  - number: 15
+    date: "2023/04"
+    destination: "Cairo, Aswan, Luxor"
+    region: "—"
+    country: "Egypt"
+    notes: ""
+
+  - number: 14
+    date: "2017/09"
+    destination: "Honolulu"
+    region: "Hawaii"
+    country: "USA"
+    notes: ""
+
+  - number: 13
+    date: "2014/10"
+    destination: "Los Angeles"
+    region: "California"
+    country: "USA"
+    notes: ""
+
+  - number: 12
+    date: "2012/04"
+    destination: "San Diego"
+    region: "California"
+    country: "USA"
+    notes: ""
+
+  - number: 11
+    date: "2010/05"
+    destination: "Portland"
+    region: "Oregon"
+    country: "USA"
+    notes: ""
+
+  - number: 10
+    date: "2010/05"
+    destination: "Alaska Cruise"
+    region: "Alaska"
+    country: "USA"
+    notes: "Cruise"
+
+  - number: 9
+    date: "2009/04"
+    destination: "Seattle"
+    region: "Washington"
+    country: "USA"
+    notes: ""
+
+  - number: 8
+    date: "2007/08"
+    destination: "Las Vegas"
+    region: "Nevada"
+    country: "USA"
+    notes: "Revisited: 2022/11"
+
+  - number: 7
+    date: "2004/07"
+    destination: "Victoria"
+    region: "BC"
+    country: "Canada"
+    notes: ""
+
+  - number: 6
+    date: "2003/06"
+    destination: "Okanagan"
+    region: "BC"
+    country: "Canada"
+    notes: ""
+
+  - number: 5
+    date: "1999/09"
+    destination: "香港 (Hong Kong)"
+    region: "—"
+    country: "China"
+    notes: ""
+
+  - number: 4
+    date: "1998/09"
+    destination: "南京 (Nanjing)"
+    region: "江苏 (Jiangsu)"
+    country: "China"
+    notes: ""
+
+  - number: 3
+    date: "1996/10"
+    destination: "九寨沟 (Jiuzhaigou)"
+    region: "四川 (Sichuan)"
+    country: "China"
+    notes: ""
+
+  - number: 2
+    date: "1996/08"
+    destination: "普陀山 (Mount Putuo)"
+    region: "浙江 (Zhejiang)"
+    country: "China"
+    notes: ""
+
+  - number: 1
+    date: "1995/06"
+    destination: "杭州 (Hangzhou)"
+    region: "浙江 (Zhejiang)"
+    country: "China"
+    notes: ""
