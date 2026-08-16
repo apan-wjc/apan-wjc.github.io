@@ -8,40 +8,26 @@ tags:
 金婚前与 YY 共走 50 个地方。
 
 <style>
-
-.md-content {
-  max-width: none;
-}
-.md-grid {
-  max-width: 1400px;  /* adjust to taste — default is usually ~1200px */
-}
-
 /* Dark mode striping (white overlay) */
-[data-md-color-scheme="slate"] .travel-table tr:nth-child(even) {
+[data-md-color-scheme="slate"] table tr:nth-child(even) {
   background-color: rgba(255, 255, 255, 0.04);
 }
-[data-md-color-scheme="slate"] .travel-table tr:hover {
+[data-md-color-scheme="slate"] table tr:hover {
   background-color: rgba(255, 255, 255, 0.08);
 }
-
 /* Light mode striping (dark overlay) */
-[data-md-color-scheme="default"] .travel-table tr:nth-child(even) {
+[data-md-color-scheme="default"] table tr:nth-child(even) {
   background-color: rgba(0, 0, 0, 0.05);
 }
-[data-md-color-scheme="default"] .travel-table tr:hover {
+[data-md-color-scheme="default"] table tr:hover {
   background-color: rgba(0, 0, 0, 0.09);
 }
-
-.travel-table tr:nth-child(odd) {
+table tr:nth-child(odd) {
   background-color: transparent;
-}
-
-.travel-table {
-  font-size: 0.8em;
 }
 </style>
 
-<table class="travel-table">
+<table>
   <thead>
     <tr>
       <th>No.</th>
