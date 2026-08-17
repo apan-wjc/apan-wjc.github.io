@@ -37,7 +37,7 @@ plugins:
         - cc: docs/dushu/ChineseCultrure.yml
         - lgj: docs/note/legoj.yml
         - lgx: docs/note/legox.yml
-        - gm: docs/blogc/golden-merriage.yml
+        - gm: docs/note/golden-merriage.yml
 theme:
   name: material
   icon:

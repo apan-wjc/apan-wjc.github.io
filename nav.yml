@@ -32,6 +32,8 @@ nav:
       - note/index.md
       - LegoJ: note/legoj.md
       - LegoX: note/legox.md
+      - 备忘:
+          - note/golden-merriage.md
   - About:
       - This site: about/index.md
   - Tags: tags.md
@@ -47,8 +49,11 @@ nav:
       - blogc/2012.md
       - blogc/2006.md
       - blogc/1990.md
-      - 备忘:
-          - blogc/golden-merriage.md
   - 读书:
       - 天干、地支、生肖: dushu/ChineseCultrure.md
       - 繁花: dushu/FanHua.md
+  - 写作:
+      - 记录:
+          - 奶奶的话: writing/NaiNaiSaying.md
+      - 小小小说:
+          - 艳遇: writing/YanYu.md
