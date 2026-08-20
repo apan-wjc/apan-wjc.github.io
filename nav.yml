@@ -14,6 +14,7 @@ nav:
       - tech/resource.md
       - MkDocs:
           - mkdocs/playgroud.md
+          - mkdocs/media.md
           - mkdocs/front-matter.md
           - mkdocs/practice.md
           - mkdocs/setup.md
@@ -49,6 +50,8 @@ nav:
       - blogc/2012.md
       - blogc/2006.md
       - blogc/1990.md
+      - 1960-1969: blogc/1960-1969.md
+      - 1950-1959: blogc/1950-1959.md
   - 读书:
       - 天干、地支、生肖: dushu/ChineseCultrure.md
       - 繁花: dushu/FanHua.md

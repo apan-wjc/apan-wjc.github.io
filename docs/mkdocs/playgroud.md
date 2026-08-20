@@ -1,4 +1,4 @@
-### 样式
+### Admonition Style
 
 ??? note "默认支持的样式"
 
